@@ -8,4 +8,4 @@ This project is designed using Bootstrap 5. [Live Link](https://joygoswami.githu
 
 ## Links
 
-# [Live Link](https://joygoswami.github.io/onu/){:target="\_blank" rel="noopener"}
+# [Live Link](https://joygoswami.github.io/onu/)
