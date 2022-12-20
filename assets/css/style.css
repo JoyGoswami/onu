@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --heading-font: "Roboto Condensed", sans-serif;
+  --para-font: "Roboto", sans-serif;
+  --nav-font: "Jost", sans-serif;
+
+  --primary-color: #fdfafa;
+  --light: #eff5f9;
+  --dark: #010101;
+  --link-hover-color: #87d37c;
+  --service-section-color: #e1e1e1;
+}
+/* common style */
+.text-justify {
+  text-align: justify;
+}
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+/* common style */
+/* header section starts */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/header_img.jpg) no-repeat;
+  background-size: cover;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: var(--link-hover-color);
+}
+header .nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: right;
+}
+header .navbar-brand img {
+  height: 80px;
+}
+header .carousel-inner h1 span {
+  color: var(--link-hover-color);
+}
+header .carousel-indicators [data-bs-target] {
+  height: 25px;
+  width: 25px;
+  border: 0;
+  opacity: 1;
+  border-radius: 50%;
+}
+header .carousel-indicators .active {
+  background-color: var(--link-hover-color);
+  opacity: 1;
+}
+/* header section ends */
+/* about section starts */
+.about-section .content-item i,
+.about-section .content-item h2 {
+  transition: all 0.5s ease;
+}
+.about-section .content-item:hover i,
+.about-section .content-item:hover h2 {
+  color: var(--link-hover-color);
+  cursor: pointer;
+}
+/* about section ends */
+/* service section starts */
+.service-section {
+  background-color: var(--service-section-color);
+}
+.service-section .content-item {
+  position: relative;
+  overflow: hidden;
+}
+.service-section .content-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-section .content-item:hover .content-overlay {
+  top: 0;
+  visibility: visible;
+}
+.service-section .content-overlay a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  padding: 12px;
+}
+.service-section .content-overlay a:hover {
+  background-color: var(--link-hover-color);
+  border-color: var(--link-hover-color);
+}
+/* service section ends */
+/* portfolio section starts */
+.portfolio .portfolio-img-container {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio .portfolio-img-container .portfolio-img-overlay {
+  position: absolute;
+  top: -100%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: var(--link-hover-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+.portfolio .portfolio-img-container:hover .portfolio-img-overlay {
+  top: 0;
+  visibility: visible;
+}
+.portfolio .nav-pills .nav-link {
+  background-color: #000;
+  border-radius: 0px;
+  margin: 0 5px;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.portfolio .nav-pills .nav-link:hover,
+.portfolio .nav-pills .nav-link.active {
+  background-color: var(--link-hover-color);
+}
+/* portfolio section ends */
+/* pricing section starts */
+.pricing .pricing-card-container {
+  background-color: #39393a;
+  transition: all 0.5s ease;
+}
+.pricing .pricing-card-header {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.pricing .pricing-card-container:hover {
+  background-color: var(--link-hover-color);
+}
+.pricing .pricing-card-container:hover .pricing-card-header {
+  background-color: #fff;
+  color: var(--link-hover-color);
+}
+/* pricing section ends */
+/* counter section starts */
+.counter-section {
+  /* height: 350px; */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/project_done.jpg) no-repeat center/cover;
+}
+.counter-section .counter-box {
+  border: 1px solid #fff;
+}
+.counter-section .counter-box h4 {
+  font-size: 96px;
+  font-weight: 600;
+}
+.counter-section .counter-box p {
+  font-size: 18px;
+}
+/* counter section ends */
+/* contact us section starts */
+.contact-us .contact-us-container i {
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+.contact-us .contact-us-container h4 {
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+.contact-us .contact-us-container p {
+  font-size: 15px;
+}
+.contact-us .contact-us-container:hover i,
+.contact-us .contact-us-container:hover h4 {
+  color: var(--link-hover-color);
+}
+/* contact us section ends */
+/* contact form section starts */
+.contact-form {
+  background-color: #f5f5f5;
+}
+/* contact form section ends */
+/* map section starts */
+/* map section ends */
+/* footer section starts */
+footer {
+  background-color: #000101;
+}
+footer .nav-link {
+  padding: 0 0.5rem;
+}
+/* footer section ends */
+.ratio::before {
+  display: block;
+  /* padding-top: var(--bs-aspect-ratio); */
+  content: "";
+  padding-top: 30%;
+}
+@media (min-width: 0px) and (max-width: 991px) {
+  header nav {
+    height: 103px;
+  }
+  header .nav-item {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid #fff;
+    padding-right: 10px;
+  }
+  header .navbar-nav {
+    max-width: 200px;
+  }
+}
